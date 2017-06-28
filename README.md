@@ -60,10 +60,15 @@ earlier):
 (require 'nrepl-puget)
 
 (defun my-init-cider-connected-hook ()
-  (let ((src (-> "~/.init.clj"
-		 expand-file-name)))
-    (if (file-exists-p src)
-	(cider-load-file src))))
+  (let ((src (expand-file-name "~/.init.clj")))
+	 (if (file-exists-p src)
+	     (let* ((buf (find-buffer-visiting src))
+		    (killp (not buf))
+		    (buf (or buf (find-file-noselect src))))
+	       (unwind-protect
+		   (cider-load-file src)
+		 (unless killp
+		   (kill-buffer buf))))))
 
 (add-hook 'cider-connected-hook 'my-init-cider-connected-hook)
 
