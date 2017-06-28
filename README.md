@@ -58,6 +58,7 @@ add the following (**note** refer to the configuration file you created
 earlier):
 ```emacs
 (require 'nrepl-puget)
+(require 'cider)
 
 (defun my-init-cider-connected-hook ()
   (let ((src (expand-file-name "~/.init.clj")))
