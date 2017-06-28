@@ -1,5 +1,10 @@
 # Configure and use puget in Cider.
 
+[![Travis CI Build Status][travis-badge]][travis-link]
+
+  [travis-link]: https://travis-ci.org/plandes/clj-nrepl-puget
+  [travis-badge]: https://travis-ci.org/plandes/clj-nrepl-puget.svg?branch=master
+
 Configure and use [Puget](https://github.com/greglook/puget)
 in [Cider](https://github.com/clojure-emacs/cider)
 with [Emacs](https://www.gnu.org/software/emacs/).  Cider provides a Puget
