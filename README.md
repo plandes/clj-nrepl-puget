@@ -1,4 +1,4 @@
-# Configure and use puget in Cider.
+# Configure and use Puget in Cider.
 
 [![Travis CI Build Status][travis-badge]][travis-link]
 
@@ -19,6 +19,20 @@ Specifically:
   doesn't allow easy configuration via Cider.  This package allows a one time
   (i.e. REPL startup) to (re)configure.
 * Include Emacs Lisp to easily configure the lisp cider project.
+
+
+## Conents
+
+* [Obtaining](#obtaining)
+* [Configuration](#configuration)
+* [Usage](#usage)
+* [Dynamic Width and Length of Ouptut](#dynamic-width-and-length-of-ouptut)
+* [Documentation](#documentation)
+* [Building](#building)
+* [Changelog](#changelog)
+* [License](#license)
+  * [Emacs Code](#emacs-code)
+  * [Everything Else](#everything-else)
 
 
 ## Obtaining
@@ -103,7 +117,7 @@ Which produces
 => [asym #{"hash" :set} "string" 123]
 ```
 
-## Dynamic Width and Length
+## Dynamic Width and Length of Ouptut
 
 Per the Cider use case, `cloijure.pprint/*print-right-margin*` and
 `*print-length*` are passed to Puget
