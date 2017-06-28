@@ -113,9 +113,8 @@ An example use case is setting the size of your frame:
   (set-frame-width frame width)
   (let ((width (window-width)))
     (-> (format "(zensols.nrpuget.core/option-assoc! :width-override %d)" width)
-	(nrepl-sync-request:eval (cider-current-connection)
-				 (cider-current-session)
-				 (cider-current-ns)))))
+        (nrepl-request:eval #'(lambda (&rest args))
+                            (cider-current-connection)))))
 ```
 
 
