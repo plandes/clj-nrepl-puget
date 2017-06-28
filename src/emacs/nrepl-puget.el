@@ -32,7 +32,6 @@
 
 (defun nrepl-puget-detect-ansi-p (string)
   "Return non-nil if STRING is an ANSI string."
-  ;"[35m1[0m"
   (string-match "^\\[" string))
 
 (defun cider-font-lock-as (mode string)
