@@ -113,6 +113,11 @@ mkdir ../clj-zenbuild && wget -O - https://api.github.com/repos/plandes/clj-zenb
 - Build the software: `make jar`
 
 
+## Changelog
+
+An extensive changelog is available [here](CHANGELOG.md).
+
+
 ## License
 
 Copyright © 2017 Paul Landes
