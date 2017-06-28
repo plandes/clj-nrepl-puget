@@ -98,6 +98,26 @@ Which produces
 => [asym #{"hash" :set} "string" 123]
 ```
 
+## Dynamic Width and Length
+
+Per the Cider use case, `cloijure.pprint/*print-right-margin*` and
+`*print-length*` are passed to Puget
+when
+[`println`](https://plandes.github.io/clj-nrepl-puget/codox/zensols.nrpuget.core.html) is
+used.  However, these can be overriden by setting `:width-override` and
+`:seq-limit-override` (for `*print-length*`).
+
+An example use case is setting the size of your frame:
+```emacs
+(defun set-width (width)
+  (set-frame-width frame width)
+  (let ((width (window-width)))
+    (-> (format "(zensols.nrpuget.core/option-assoc! :width-override %d)" width)
+	(nrepl-sync-request:eval (cider-current-connection)
+				 (cider-current-session)
+				 (cider-current-ns)))))
+```
+
 
 ## Documentation
 

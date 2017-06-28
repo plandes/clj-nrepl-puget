@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ## [Unreleased]
+### Added
+- Feature to override and set width and length of puget via configuration.
 
 ## [0.0.1] - 2017-06-28
 ## Added
