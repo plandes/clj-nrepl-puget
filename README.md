@@ -1,4 +1,4 @@
-# Configure and use Puget in Cider.
+# Configure and use Puget in Cider
 
 [![Travis CI Build Status][travis-badge]][travis-link]
 
@@ -20,19 +20,23 @@ Specifically:
   (i.e. REPL startup) to (re)configure.
 * Include Emacs Lisp to easily configure the lisp cider project.
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+## Table of Contents
 
-## Conents
+- [Obtaining](#obtaining)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Dynamic Width and Length of Ouptut](#dynamic-width-and-length-of-ouptut)
+- [Documentation](#documentation)
+- [Building](#building)
+- [Changelog](#changelog)
+- [License](#license)
+    - [Emacs Code](#emacs-code)
+    - [Everything Else](#everything-else)
 
-* [Obtaining](#obtaining)
-* [Configuration](#configuration)
-* [Usage](#usage)
-* [Dynamic Width and Length of Ouptut](#dynamic-width-and-length-of-ouptut)
-* [Documentation](#documentation)
-* [Building](#building)
-* [Changelog](#changelog)
-* [License](#license)
-  * [Emacs Code](#emacs-code)
-  * [Everything Else](#everything-else)
+<!-- markdown-toc end -->
+
+
 
 
 ## Obtaining
