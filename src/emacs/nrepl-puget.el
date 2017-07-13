@@ -36,8 +36,9 @@
 
 (defun cider-font-lock-as (mode string)
   "Use MODE to font-lock the STRING."
-  (if (nrepl-puget-detect-ansi-p string)
-      (ansi-color-apply string)
+  (let ((string (if (nrepl-puget-detect-ansi-p string)
+		    (ansi-color-apply string)
+		  string)))
     (funcall cider-font-lock-as-old mode string)))
 
 (provide 'nrepl-puget)
